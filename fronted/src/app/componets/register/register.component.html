@@ -1,0 +1,104 @@
+<div class="principal">
+    <div class="hijo1">
+
+        <form  [formGroup] = "userForm" (ngSubmit)=   "onSaveForm()">
+
+            <div class="row">
+                <div class="col-md-6">
+
+
+                    <div class="margin-bot">
+
+                        <label >Nombre</label>
+                        <input type="text" class="form-control" formControlName ="nombre"  >
+                    
+                    </div>
+
+                    <div class="margin-bot">
+
+                        <label >Documento de identidad</label>
+                        <input type="number" class="form-control"  formControlName ="cc" >
+                    
+                    </div>
+
+                   
+
+
+                    <div class="row margin-bot">
+
+                        <div class="col-md-6">
+
+                            <label for="inputState">Genero</label>
+                            <select id="inputState" class="form-control"  formControlName ="genero" >
+                                <option>Hombre</option>
+                                <option>Mujer</option>
+                            </select>
+
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <label for="inputState">EPS</label>
+                            <select id="inputState" class="form-control"  formControlName ="eps" >
+                                <option>IPS UDEA</option>
+                                <option>COOMEVA</option>
+                                <option>SURA</option>
+                                <option>CRUZ BLANCA</option>
+                                <option>MEDIMAS</option>
+                               
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="row margin-bot">
+                        <div class="col-md-4">
+
+                            <label >Telefono</label>
+                            <input type="text" class="form-control"  formControlName ="telefono" >
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <label >Dirreccion</label>
+                            <input type="text" class="form-control" formControlName ="direccion" >
+
+                        </div>
+
+                        <div class="col-md-4 ">
+
+                            <label >Edad</label>
+                            <input type="number" class="form-control" formControlName ="edad"  >
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            
+
+                <div class="col-md-6">
+
+                    <div class="order">
+
+                        <label >Ingrese Imagen</label>
+                        <input type="file" class="form-control-file" formControlName ="imagen">
+
+                    </div>
+
+                </div>
+                
+            </div>
+            
+            <button class="margin-bot" type="submit" >Save</button>
+
+        </form>
+    </div>
+</div>
+
+
