@@ -1,48 +1,64 @@
 <div class="principal">
-  <!-- Default form register -->
-  <form class="text-center border border-light p-5">
 
-      <p class="h4 mb-4">Sign up</p>
 
-      <div class="form-row mb-4">
-        <div class="col">
-          <!-- First name -->
-          <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" required>
+  <div class="order">
+
+
+      <form [formGroup] = "userForm" (ngSubmit)=   "onSaveForm()">
+
+        <div class="margin-bot">
+
+            <label >Nombre:</label>
+            <input type="text" class="form-control"  formControlName = "nombre" placeholder="Juan">
+        
         </div>
-        <div class="col">
-          <!-- Last name -->
-          <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+
+        <div class="margin-bot">
+
+            <label >Teléfono de contacto:</label>
+            <input type="text" class="form-control"  formControlName = "telefono" placeholder="555-55-55">
+        
         </div>
-      </div>
 
-      <!-- E-mail -->
-      <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+        <div class="margin-bot">
 
-      <!-- Password -->
-      <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-      <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-        At least 8 characters and 1 digit
-      </small>
+            <label >E-mail del contacto:</label>
+            <input type="text" class="form-control"  formControlName = "correo" placeholder="gerencia@vecajudi.com.co">
+        
+        </div>
 
-      <!-- Phone number -->
-      <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-      <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-        Optional - for two-step authentication
-      </small>
-  
-      <!-- Sign up button -->
-      <button mdbBtn color="info" block="true" class="my-4" type="submit" >Sign in</button>
+        <div class="margin-bot">
 
-      <!-- Social register -->
-      <p>or sign up with:</p>
+            <label >Mensaje:</label>
+            <textarea type = "text"class="form-control" rows="3" formControlName = "mensaje" placeholder="Estoy interesado...">
 
-      <hr>
+            </textarea>
+        
+        </div>
 
-      <!-- Terms of service -->
-      <p>By clicking
-        <em>Sign up</em> you agree to our
-        <a href="" target="_blank">terms of service</a></p>
 
-    </form>
-    <!-- Default form register -->
+        <div class="margin-bot">
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <button type="submit" class="btn btn-primary margin-bot">Enviar</button>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <button type="button" class="btn btn-primary margin-bot" (click) = "resetForm()">Borrar</button>
+
+                </div>
+
+            </div>
+
+        </div>
+      </form>
+
+  </div>
+
+
+
 </div>

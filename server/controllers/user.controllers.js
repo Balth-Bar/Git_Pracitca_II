@@ -1,5 +1,6 @@
 const user  = require('../models/user');
 
+
 const userctrol = {};
 
 userctrol.getUsers = async(req, res) =>{
@@ -21,6 +22,7 @@ userctrol.getUser = async(req, res) =>{
     const one_user = await user.find({"cc": req.params.cc});
     res.json(one_user)
 }
+
 
 
 

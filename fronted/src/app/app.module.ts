@@ -18,6 +18,7 @@ import { RegisterComponent } from './componets/register/register.component';
 import { SearchComponent } from './componets/search/search.component';
 import { HomeComponent } from './componets/home/home.component';
 import { ContactComponent } from './componets/contact/contact.component';
+import { LoginComponent } from './componets/login/login.component';
 
 
 
@@ -31,7 +32,8 @@ import { ContactComponent } from './componets/contact/contact.component';
     RegisterComponent,
     SearchComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   
   ],
   imports: [

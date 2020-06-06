@@ -1,0 +1,50 @@
+<div class="principal">
+
+
+    <div class="order">
+
+
+        
+        <div class="row">
+
+            
+            <form [formGroup] = "userForm" (ngSubmit)=   "click()" class="col-md-6">
+                    <div class="margin-form">
+
+                        <div class="margin-bot">
+
+                            <label >Usuario:</label>
+                            <input type="text" class="form-control"  formControlName = "nombre" placeholder="">
+                        
+                        </div>
+
+                        <div class="margin-bot">
+
+                            <label >contraseña:</label>
+                            <input type="text" class="form-control"  formControlName = "contra" placeholder="">
+                        
+                        </div>
+                        
+                        <div nbRecaptcha key="public key" formControlName="captcha"></div>
+
+                        <div class="margin-top">
+                            <button type="submit" class="btn btn-primary margin-bot">Enviar</button>
+                        </div>
+                        
+                    </div>
+
+            </form>   
+        
+
+            <div class="col-md-6 ">
+                <div class="margenes">
+                     <img src="../../../assets/img-pag/file_2.png"  width="150px" >
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </div>
+
+</div>

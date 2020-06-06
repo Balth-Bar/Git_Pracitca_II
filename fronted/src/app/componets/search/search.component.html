@@ -1,1 +1,235 @@
-<p>search works!</p>
+<div class="principal">
+
+
+        <div class = "top margin-bot" >
+
+            <div class="row">
+
+                <div class="col-md-6" >
+                    <form  [formGroup] = "userForm" (ngSubmit)=   "callOne()">
+                        <div class="row ">
+                            
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" formControlName ="cc" required>
+                            </div>
+                            
+                            <div class="col-md-2" >
+                                <button class="margin-bot btn btn-dark" type="submit" >Enviar</button>
+                            </div>
+                        </div>
+        
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+
+
+        <div class="organizar" >
+
+            <div class="row "  *ngFor = "let patient of regristros ">
+
+                
+                <div class="col-md-6 margen">
+
+                    <div class="col-md-12">
+
+                        <div class="margin-bot-new">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="margin-top margin-left"> 
+                                        <b>Nombre:</b>                              
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <div class="margin-top">
+
+                                        <p align="left" class="margin-left" >{{patient.nombre}}</p>
+
+                                    </div>
+                                    
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12">
+
+                        <div class="margin-bot-new">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <p class="margin-left"> <b>Cedula:</b></p>
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p align="left"  class="margin-left">{{patient.cc}}</p>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12">
+
+                        <div class="margin-bot-new">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <p class="margin-left"> <b>Genero:</b></p>
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p align="left" class="margin-left">{{patient.genero}}</p>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12">
+
+                        <div class="margin-bot-new">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <p class="margin-left"> <b>EPS:</b></p>
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p align="left" class="margin-left" >{{patient.eps}}</p>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12">
+
+                        <div class="margin-bot-new">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <p class="margin-left"> <b>Edad:</b></p>
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p align="left" class="margin-left">{{patient.edad}}</p>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12">
+
+                        <div class="margin-bot-new">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <p class="margin-left"> <b>Telefono:</b></p>
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p align="left"class="margin-left" >{{patient.telefono}}</p>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12">
+
+                        <div class="margin-bot-new">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <p class="margin-left"> <b>Direccion:</b></p>
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p align="left"class="margin-left" >{{patient.direccion}}</p>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+                
+                <div class="col-md-6">
+
+                        <div class="margen">
+                            <img class="imagen" src= "/assets/img-users/{{patient.imagen}}" alt="image"  width="250px" height="200px">
+                        </div>
+                    
+        
+                </div>
+
+            </div>
+
+            
+
+            
+
+        </div>
+
+    
+
+
+        <!--
+        <div >
+            
+            <p align="left" >{{"Cedula: "         + patient.cc}}</p>
+            <p align="left" >{{"Genero: "         + patient.genero}}</p>
+            <p align="left" >{{"Eps: "            + patient.eps}}</p>
+            <p align="left" >{{"Edad: "           + patient.edad}}</p>
+            <p align="left" >{{"Tel: "            + patient.telefono}}</p>
+            <p align="left" >{{"direccion: "      + patient.direccion}}</p>
+
+
+        </div>-->
+
+
+</div>
