@@ -18,4 +18,8 @@ body --->raw =
     
 }
 
-y ya esta lsita para funcionar
+y ya esta lsita para funcionar.
+
+Las imagenes que se usen para los pacientes DEBEN de guardarse en la caperta
+
+fronted/src/assets/img-users sino la aplicacion no leera las imagenes.
