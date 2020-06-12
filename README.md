@@ -12,7 +12,7 @@ http://localhost:3000/api/user/bytr
 
 Configurar el envio 
 en header ponemos:
-KEY  = COntent-typpe
+KEY  = Content-typpe
 VALUE = application/json
 
 body --->raw = 
